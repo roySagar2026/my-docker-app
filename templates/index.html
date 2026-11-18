@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>my-docker-app</title>
+  <style>
+    body { margin:0; height:100vh; display:grid; place-items:center;
+           font-family: system-ui, sans-serif; background:#0f172a; color:#e2e8f0; }
+    .card { text-align:center; padding:2.5rem 3.5rem; border-radius:16px;
+            background:#1e293b; box-shadow:0 10px 30px rgba(0,0,0,.4); }
+    h1 { font-size:3rem; margin:0 0 .5rem; color:#38bdf8; }
+    p  { margin:.25rem 0; color:#94a3b8; }
+    code { color:#4ade80; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>I am here 👋</h1>
+    <p>Python + Flask running inside Docker</p>
+    <p>Container: <code>{{ hostname }}</code></p>
+    <p>Version: <code>{{ version }}</code></p>
+  </div>
+</body>
+</html>
